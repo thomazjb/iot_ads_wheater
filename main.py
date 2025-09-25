@@ -1,11 +1,12 @@
+# THOMAZ JULIANN BONCOMPAGNI - Análise e Desenvolvimento de Sistemas - Internet das Coisas - 25/09/2025
 import dht
 import machine
 import urequests
 import time
-import wifi_lib   # importa a biblioteca de conexão Wi-Fi
+import wifi_lib   # importo a biblioteca de conexão Wi-Fi
 
 # conecta ao Wi-Fi usando o wifi_lib
-wifi_lib.conecta("FAMILIA_BUSCAPE", "Peganois2024!@")
+wifi_lib.conecta("FAMILIA_BUSCAPE", "Peganois2024!@") # utilizo a lib de conexão do wifi (troquei a senha kkkk)
 
 sensor = dht.DHT11(machine.Pin(4))
 RELE_PIN = machine.Pin(17, machine.Pin.OUT)
